@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg: #0d0f1a;
+    --surface: #14172b;
+    --panel: #1a1e35;
+    --border: #2a2f50;
+    --yellow: #f5d800;
+    --red: #ff3e3e;
+    --teal: #00d4aa;
+    --text: #e8e8f0;
+    --muted: #6b7099;
+    --pixel: "Press Start 2P", monospace;
+    --mono: "JetBrains Mono", monospace;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--mono);
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 3px;
+}
+
+button {
+    cursor: pointer;
+    font-family: var(--mono);
+}
+input[type="range"] {
+    cursor: pointer;
+}
